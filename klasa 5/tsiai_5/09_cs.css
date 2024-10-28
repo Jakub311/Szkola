@@ -1,0 +1,40 @@
+main {
+    display: flex;
+}
+header {
+    height: 10vh;
+    background-color: blue;
+}
+nav {
+    width: 40%;
+}
+nav div:first-child{
+    height: 27vh;
+    background-color: bisque;
+}
+nav div:first-child+div{
+    height: 27vh;
+    background-color: azure;
+}
+nav div:last-child{
+    height: 26vh;
+    background-color: grey;
+}
+aside{
+    width: 60%;
+}
+aside div:first-child{
+    height: 40vh;
+    background-color: orange;
+}
+aside div:last-child{
+    height: 40vh;
+    background-color: red;
+}
+footer{
+    height: 10vh;
+    background-color: aqua;
+}
+p{
+    margin-top: 0;
+}
