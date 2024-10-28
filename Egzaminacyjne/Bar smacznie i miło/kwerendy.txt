@@ -1,0 +1,22 @@
+- Zapytanie 1: wybierające z tabeli lokale jedynie pola: nazwa, miasto, ulica, numer
+
+SELECT nazwa,miasto,ulica,numer
+FROM lokale;
+
+- Zapytanie 2: wybierające z tabeli dania jedynie pola nazwa i cena dla dań mięsnych
+
+SELECT nazwa,cena
+FROM dania
+WHERE typ=2;
+
+- Zapytanie 3: działające na tabeli dania i liczące średnią cenę zupy
+
+SELECT avg(cena)
+FROM dania
+WHERE typ=1;
+
+- Zapytanie 4: edytujące dane w tabeli pracownicy. Dla rekordu, którego id jest równe 6, stanowisko ma nową wartość równą 2
+
+UPDATE pracownicy
+SET stanowisko=2
+WHERE id=6;
