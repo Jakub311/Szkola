@@ -1,0 +1,8 @@
+git init
+git add .
+git commit -m 29.10
+git push -u origin main
+
+git pull origin main --
+
+git config --global core.autocrlf true
