@@ -1,0 +1,8 @@
+table {
+    text-align: center;
+    margin-top: 3rem;
+    width: 40rem;
+    border: 1px solid  rgb(103, 50, 163);
+    border-collapse: collapse;
+    color: rgb(30, 30,30);
+}

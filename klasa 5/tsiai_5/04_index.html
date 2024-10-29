@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./04.s.js" defer></script>
+    <link rel="stylesheet" href="./04_cs.css">
+</head>
+<body>
+    <p id="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, labore esse? Illum debitis, provident ea maxime eum ullam laudantium, natus aut harum voluptate temporibus. Laudantium quam exercitationem officia perferendis rerum!</p>
+    <label for="size">Podaj wielkosc czcionki</label>
+    <input type="number" name="size" id="size" min="8" max="160" step="8"> 
+    <input type="checkbox" name="italic" id="italic">
+    <label for="italic">Czy tekst pochylony</label>
+    <input type="radio" name="color" id="blue" checked>Niebieski
+    <input type="radio" name="color" id="red">Czerwony
+    <input type="radio" name="color" id="yellow">Żółty
+
+    <select name="class" id="class">
+        <option value="light">Zestaw 1</option>
+        <option value="dark">Zestaw 2</option>
+        <option value="autumn">Zestaw 3</option>
+    </select>
+
+    <button id="btn">Wyslij</button>
+    <button id="btnc">Zmiana motywu</button>
+</body>
+</html>

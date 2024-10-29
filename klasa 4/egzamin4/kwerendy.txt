@@ -1,0 +1,25 @@
+Zapytanie 1: wybierające jedynie pola nazwa i ulica dla kwiaciarni z miasta Malbork
+SELECT nazwa, ulica
+FROM kwiaciarnie
+WHERE miasto='Malbork';
+Zapytanie 2: wybierające jedynie pole id_kwiaciarni oraz liczące liczbę zamówień dla poszczególnych kwiaciarni
+SELECT id_kwiaciarni, COUNT(id_zam)
+FROM zamowienia
+GROUP BY id_kwiaciarni;
+Zapytanie 3: wybierające jedynie pola nazwa i miasto z tabeli kwiaciarnie i odpowiadające im pole 
+kwiaty z tabeli zamowienia dla zamówień z dnia 7 stycznia 2017. Należy posłużyć się relacją
+SELECT nazwa,miasto,kwiaty
+FROM kwiaciarnie
+    INNER JOIN zamowienia ON kwiaciarnie.id_kwiaciarni=zamowienia.id_kwiaciarni
+WHERE data="2017.01.07";
+Zapytanie 4: tworzące nową tabelę klienci o polach:
+id, klucz główny, automatycznie inkrementowany, nie może przyjmować wartości NULL
+imie, typu tekstowego o długości 15 znaków
+nazwisko, typu tekstowego o długości 15 znaków
+rabat, przyjmujący jedynie liczby naturalne
+CREATE TABLE klienci(
+    id int PRIMARY KEY auto_increment NOT NULL,
+    imie varchar(15),
+    nazwisko varchar(15),
+    rabat int UNSIGNED
+);
