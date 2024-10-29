@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    background-color: sienna;
+    color: white;
+    font-family: Georgia;
+    height: 150px;
+}
+#left {
+    width: 40%;
+}
+#mid {
+    width: 50%;
+    font-size: 150%;
+}
+#right {
+    width: 10%;
+    text-align: center;
+}
+main {
+    background-color: tan;
+    padding: 100px;
+}
+
+footer {
+    display: flex;
+    background-color: sienna;
+    height: 150px;
+    color: white;
+    font-family: Georgia;
+}
+#lewy {
+    width: 40%;
+}
+ul {
+    list-style-type: circle;
+}
+#srodek {
+    width: 50%;
+    font-size: 150%;
+}
+#prawy {
+    width: 10%;
+    text-align: center;
+}
+a {
+    border: 1px;
+    background-color: tan;
+    color: sienna;
+    padding: 40px;
+    line-height: 150px;
+}

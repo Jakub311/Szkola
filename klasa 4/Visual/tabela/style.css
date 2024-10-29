@@ -1,0 +1,11 @@
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 5px;
+}
+ 
+.queue{
+    border: 2px dashed darkblue;
+    border-collapse: unset;
+}

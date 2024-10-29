@@ -1,0 +1,7 @@
+table{
+    text-align: left;
+    border: 2px solid cyan;
+}
+td, th{
+    border: 2px solid black;
+}
