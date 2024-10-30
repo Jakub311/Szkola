@@ -18,7 +18,7 @@ SELECT marka,rok_produkcji FROM auta
 INTO OUTFILE "C:\\Users\\Jakub_K\\Downloads\\samochody.txt"
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n';
+LINES TERMINATED BY '\r\n';
 6. Wykonaj zrzut bazy danych (gorącą kopię logiczną) z poziomu phpMyAdmin oraz z poziomu wiersza poleceń do pliku samochody_imie_nazwisko.sql
 7. Do pliku osoby.sql wykonaj zrzut tabeli osoby (z poziomu wiersza poleceń)
 8. Usuń bazę danych samochody_imie_nazwisko. 
@@ -27,7 +27,7 @@ LINES TERMINATED BY '\n';
 LOAD DATA LOCAL INFILE 'C:\\Users\\Jakub_K\\Downloads\\wypadki.txt'
 INTO TABLE wypadki
 FIELDS TERMINATED BY ' '
-LINES TERMINATED BY '\n'
+LINES TERMINATED BY '\r\n'
 (id,data_wypadku,rejestracja,@strata)
 SET strata=REPLACE(@strata,',','.');
 
