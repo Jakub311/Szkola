@@ -1,0 +1,20 @@
+Zapytanie 1: wybierające jedynie pole nazwa z tabeli towary dla towarów objętych promocją 
+SELECT nazwa
+FROM towary
+WHERE promocja=1;
+
+− Zapytanie 2: wybierające jedynie pole cena z tabeli towary dla towaru Markery 4 szt. 
+SELECT cena
+FROM towary
+WHERE nazwa='Markery 4 szt.';
+
+− Zapytanie 3: wybierające jedynie pola id oraz nazwa dla wszystkich rekordów z tabeli dostawcy oraz zliczające liczbę towarów dostarczanych przez każdego z dostawców. Nazwa kolumny (alias) dla zliczenia towarów: liczba_towarow. W zapytaniu 3 należy posłużyć się relacją 
+
+SELECT dostawcy.id,dostawcy.nazwa,count(idDostawcy) as liczba_towarow
+FROM dostawcy
+    INNER JOIN towary ON dostawcy.id=towary.idDostawcy
+GROUP BY idDostawcy;
+
+− Zapytanie 4: modyfikujące strukturę tabeli dostawcy, poprzez dodanie pola typu tekstowego o nazwie informacje.
+ALTER TABLE dostawcy
+ADD informacje text;

@@ -1,0 +1,46 @@
+*{
+    font-family: Garamond;
+    text-align: center;
+    margin: auto;
+}
+main {
+    display: flex;
+}
+
+header,footer {
+    background-color: #8C7B75;
+    color: white;
+    height: 70px;
+    font-size: 150%;
+}
+
+#left,#right {
+    background-color: #BCAAA4;
+    height: 400px;
+    width: 35%;
+}
+
+#mid {
+    background-color: #EFDCD5;
+    height: 400px;
+    width: 35%;
+}
+
+ol {
+    list-style: lower-latin;
+    list-style-position: inside;
+}
+li{
+    text-align: left;
+}
+img{
+    border: dashed 1px #8C7B75;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+#wynik {
+    width: 50%;
+    margin: 100px;
+    border: solid 1px #8C7B75;
+}
