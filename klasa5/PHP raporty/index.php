@@ -65,7 +65,7 @@
         </section>
         <section id="right">
             <h2>Kontakt</h2>
-            <p>e-mail:<a href="mailto:">bok@sklep.pl</a></p>
+            <p>e-mail:<a href="mailto:bok@sklep.pl">bok@sklep.pl</a></p>
             <img src="promocja.png" alt="promocja">
         </section>
     </main>
