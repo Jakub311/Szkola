@@ -1,0 +1,57 @@
+body {
+    font-family: Helvetica;
+    background-color: #FFE4B5;
+}
+
+#lewo {
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    width: 75%;
+    height: 100px;
+    font-size: 150%;
+    float: left;
+}
+#prawo {
+    width: 25%;
+    height: 100px;
+    float: left;
+}
+
+section{
+    clear: both;
+    width: 45%;
+    height: 300px;
+    float: left;
+}
+aside{
+    width: 55%;
+    height: 300px;
+    text-align: center;
+    float: left;
+}
+main {
+    clear: both;
+    background-color: #4B0082;
+    color: white;
+    padding: 60px;
+    clear: both;
+}
+footer {
+    background-color: #4B0082;
+    color: white;
+    padding: 40px;
+}
+form {
+    margin: 40px;
+}
+table {
+    color: white;
+    text-align: center;
+    width: 90%;
+    border: dashed 1px yellow;
+}
+tr:hover{
+    background-color:#9370DB;
+    color: yellow;
+}

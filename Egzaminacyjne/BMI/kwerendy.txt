@@ -1,0 +1,18 @@
+‒ Zapytanie 1: wstawiające do tabeli wynik rekord o danych: klucz główny nadawany automatycznie, bmi_id = 1, data_pomiaru = 2020-05-20, wynik = 15
+INSERT INTO wynik (bmi_id,data_pomiaru,wynik)
+VALUES (1,'2020-05-20',15);
+
+‒ Zapytanie 2: wybierające jedynie pola id, informacja i wart_min z tabeli bmi
+SELECT id, informacja, wart_min
+FROM bmi;
+
+‒ Zapytanie 3: wybierające jedynie pola wynik z tabeli wynik oraz informacja z tabeli bmi; zapytanie wykorzystuje relację
+SELECT wynik, informacja
+FROM wynik
+    INNER JOIN bmi ON wynik.bmi_id=bmi.id;
+
+‒ Zapytanie 4: wybierające jedynie pola wart_min i wart_max z tabeli bmi dla niedowagi (pole informacja)
+SELECT wart_min, wart_max
+FROM bmi
+WHERE informacja = 'niedowaga';
+
