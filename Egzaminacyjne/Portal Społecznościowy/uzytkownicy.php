@@ -59,7 +59,7 @@
                             WHERE login='$login';";
                             $result=$conn->query($sql);
                             $wizytowka=$result->fetch_all(1);
-                            $wiek=(rok_urodz-DATE('Y'));
+                            // $wiek=(rok_urodz-DATE('Y'));
                             foreach($wizytowka as $wizyt){
                                 echo "<div class='wizy'>";
                                 echo "<img src='{$wizyt['zdjecie']}' alt='osoba'>";
