@@ -1,0 +1,17 @@
+* {
+    font-family: Cambria;
+}
+header {
+    background-color: #C2185B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+main {
+    background-image: url(tulipany.jpg);
+    height: 500px;
+}
+footer{
+    background-color: #C2185B;
+    display: flex;
+}

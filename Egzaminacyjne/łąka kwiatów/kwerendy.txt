@@ -1,0 +1,7 @@
+SELECT imie, nazwisko,koszt 
+FROM Uczestnicy
+WHERE zaplacono=0;
+
+SELECT avg(koszt) as Sredni koszt, sum(koszt) as Calkowity koszt, count(*) as Liczba uczestnikow
+FROM Uczestnicy
+GROUP BY id;
