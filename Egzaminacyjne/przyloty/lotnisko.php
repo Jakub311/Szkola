@@ -50,7 +50,7 @@
         <div id="f1">
             <?php
             if(isset($_COOKIE['visited'])) {
-                echo "<p><i>Witaj ponownie na stronie lotniska</i></p>";
+                echo "<p><em>Witaj ponownie na stronie lotniska</em></p>";
             }
             else {
                 echo "<p><b>Dzień dobry! Strona lotniska używa ciasteczek.</b>/</p>";
