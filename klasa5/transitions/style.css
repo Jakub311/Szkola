@@ -1,0 +1,11 @@
+#blok1 {
+    height: 10rem;
+    width: 10rem;
+    background-color: blue;
+}
+#blok1:hover{
+    width: 30rem;
+    transition: 2s;
+    background-color: green;
+    
+}
