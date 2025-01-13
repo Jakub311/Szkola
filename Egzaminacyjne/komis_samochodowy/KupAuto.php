@@ -46,7 +46,7 @@
         $oferty=$result->fetch_all(1);
 
         foreach($oferty as $oferta){
-            echo "<div class='oferty'>";
+            echo "<div  class='oferty'>";
             echo "<img src='{$oferta['zdjecie']}' alt='{$oferta['model']}'>";
             echo "<h4>{$oferta['nazwa']} {$oferta['model']}</h4>";
             echo "<p>Rocznik: {$oferta['rocznik']}</p>";
