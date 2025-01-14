@@ -15,6 +15,7 @@
     echo "$data"; echo "<br>";  
     echo "$data1";     echo "<br>";
     echo "$data2";
+    echo "<br>";
 
     ?>
 </body>
