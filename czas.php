@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Czas</h1>
+    <img src="cos.gif" alt="cos">
     <?php
     $data=date("m-d");
     $data1=date("m-d-Y");
