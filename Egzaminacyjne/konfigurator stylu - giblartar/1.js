@@ -21,7 +21,7 @@ oliveE.addEventListener('click',(e)=>{
 })
 
 styleE.addEventListener('change',(e)=>{
-    style=styleE.value
+    let style=styleE.value
     rightE.style.color=style
 })
 
